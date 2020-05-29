@@ -7,7 +7,7 @@
 
     <body>
         <main>
-            <hi id="title">Cat Form</hi>
+            <h1 id="title">Cat Form</h1>
             <p id="description">This is a form about cats!</p>
             <form id="survey-form">
                 <p id="name-label">Name</p>
@@ -18,23 +18,34 @@
                 <input type="number" id="number" placeholder="Enter the number of cats you have" min="1" max="12">
                 <p>Which type of kitty is best?</p>
                 <label for="tuxie">
-                    <input type="radio" id="tuxie" name="cat-type" checked> Tuxie
+                    <input type="radio" id="tuxie" value="tuxie" name="cat-type" checked> Tuxie
                 </label>
                 <label for="gingie">
-                    <input type="radio" id="gingie" name="cat-type"> Gingie
+                    <input type="radio" id="gingie" value="gingie" name="cat-type"> Gingie
                 </label>
                 <label for="tabbers">
-                    <input type="radio" id="tabbers" name="cat-type"> Tabbers
+                    <input type="radio" id="tabbers" value="tabbers" name="cat-type"> Tabbers
                 </label>
                 <label for="calie">
-                    <input type="radio" id="calie" name="cat-type"> Calie
+                    <input type="radio" id="calie" value="calie" name="cat-type"> Calie
                 </label>
                 <label for="tortie">
-                    <input type="radio" id="tortie" name="cat-type"> Tortie
+                    <input type="radio" id="tortie" value="tortie" name="cat-type"> Tortie
                 </label>
                 <label for="night">
-                    <input type="radio" id="night" name="cat-type"> Night
+                    <input type="radio" id="night" value="night" name="cat-type"> Night
                 </label>
+                <label for="mainey">
+                    <input type="radio" id="mainey" value="mainey" name="cat-type"> Mainey
+                </label>
+                <label for="Siameses">
+                    <input type="radio" id="siameses" value="siameses" name="cat-type"> Siameses
+                </label>
+                <p> What are your favorite things about cats?</p>
+                <label for="toughin-stance">
+                    <input type="checkbox" id="toughin=stance" value="toughin-stance" name="cat-features"> Toughin' Stance
+                </label>
+                <button type="submit">Submit</button>
             </form>
         </main>
     </body>
