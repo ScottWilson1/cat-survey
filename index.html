@@ -11,26 +11,30 @@
             <p id="description">This is a form about cats!</p>
             <form id="survey-form">
                 <p id="name-label">Name</p>
-                <input type="text" id="name" placeholder="Enter your name">
+                <input type="text" id="name" placeholder="Enter your name" required>
 
                 <p id="email-label">Email</p>
-                <input type="email" id="email" placeholder="Enter your email">
+                <input type="email" id="email" placeholder="Enter your email" required>
 
-                <p id="number-label">How many kitters have you choosen to share your life with?</p>
+                <p id="number-label">How many kitters have you choosen to share your life with? (Optional)</p>
                 <input type="number" id="number" placeholder="Enter the number of cats you have" min="1" max="12">
-
-                <p id="dropdown-label">Cats are _________.</p>
-                <select id="dropdown" name="cat-description">
-                    <option></option>
-                    <option value="awesome">awesome</option>
-                    <option value="awesome">the best</option>
-                    <option value="bae">bae</option>
-                </select>
+                <br><br>
+                
+                
+                    <label  for="dropdown-label">Cats are </label>
+                    <select id="dropdown" name="cat-description" required>
+                        <option></option>
+                        <option value="awesome">awesome</option>
+                        <option value="awesome">the best</option>
+                        <option value="bae">bae</option>
+                    </select>
+                    <span></span>.</span>
+                
 
                 <p>Which type of kitty is best?</p>
                 <div>
                     <label for="tuxie">
-                        <input type="radio" id="tuxie" value="tuxie" name="cat-type" checked> Tuxie
+                        <input type="radio" id="tuxie" value="tuxie" name="cat-type" checked required> Tuxie
                     </label>
                 </div>
                 <div>
@@ -97,7 +101,7 @@
                 <p> What are your favorite features on a cat?</p>
                 <div>
                     <label for="toughin-stance">
-                        <input type="checkbox" id="toughin-stance" value="toughin-stance" name="cat-features" checked> Toughin' Stance
+                        <input type="checkbox" id="toughin-stance" value="toughin-stance" name="cat-features" checked required> Toughin' Stance
                     </label>
                 </div>
                 <div>
@@ -180,11 +184,15 @@
                         <input type="checkbox" id="bunny-feets" value="bunny-feets" name="cat-features"> Bunny Feets
                     </label>
                 </div>
+                <br>
+
                 <div>
                     <label for="cat-haiku">Please write a haiku about cats (Optional)</label>
                 </div>
                 <textarea id="cat-haiku" name="cat-haiku" rows="3" cols="70"></textarea>
-                <button type="submit">Submit</button>
+                <br>
+
+                <button type="submit" id="submit">Submit</button>
             </form>
         </main>
     </body>
