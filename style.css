@@ -1,4 +1,12 @@
-.list-item {
-    white-space: nowrap;
-    display: inline;
+body {
+    background-image: url(images/cat-snacks.jpg);
+    background-color: #A8E6DB;
+}
+
+main {
+    margin-left: 25%;
+    margin-right:25%;
+    padding-top: 15px;
+    padding-left: 30px;
+    background-color: #FFFFFF;
 }
