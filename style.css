@@ -1,6 +1,11 @@
 body {
     background-image: url(images/cat-snacks.jpg);
+    background-size: 400px 400px;
     background-color: #A8E6DB;
+}
+
+#background-contrast{
+    filter: contrast(180%);
 }
 
 main {
