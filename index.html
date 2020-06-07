@@ -2,36 +2,37 @@
 <html lang=en-US>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet" type="text/css">
         <title>Cat Form</title>
     </head>
 
     <body id="background-contrast">
         <main>
-            <h1 id="title">Cat Survey</h1>
-            <p id="description">This is a form about cats!</p>
+            <h1 id="title">Very Important Cat Survey</h1>
+            <p id="description">This is a survey about cats!</p>
             <form id="survey-form">
-                <p id="name-label">Name</p>
-                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="name" id="name-label">Name</label><br>
+                <input type="text" id="name" placeholder="Enter your name" required><br><br>
 
-                <p id="email-label">Email</p>
-                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email" required><br><br>
 
-                <p id="number-label">How many kitters have you choosen to share your life with? (Optional)</p>
+                <label for="number" id="number-label">How many kitters have you choosen to share your life with? (Optional)</label><br>
                 <input type="number" id="number" placeholder="Enter the number of cats you have" min="1" max="12">
                 <br><br>
                 
-                
-                    <label  for="dropdown-label">Cats are </label>
-                    <select id="dropdown" name="cat-description" required>
-                        <option></option>
-                        <option value="awesome">awesome</option>
-                        <option value="awesome">the best</option>
-                        <option value="bae">bae</option>
-                    </select>
-                    <span></span>.</span>
+                <label  for="dropdown-label">Cats are </label>
+                <select id="dropdown" name="cat-description" required>
+                    <option></option>
+                    <option value="awesome">awesome</option>
+                    <option value="awesome">the best</option>
+                    <option value="bae">bae</option>
+                </select>
+                <span></span>.</span>
+                <br><br>
                 
 
-                <p>Which type of kitty is best?</p>
+                <label>Which type of kitty is best?</label><br>
                 <div>
                     <label for="tuxie">
                         <input type="radio" id="tuxie" value="tuxie" name="cat-type" checked required> Tuxie
@@ -84,7 +85,7 @@
                 </div>
                 <div>
                     <label for="gray-grey">
-                        <input type="radio" id="gray-grey" value="gray-grey" name="cat-type"> Gray Grey
+                        <input type="radio" id="gray-grey" value="gray-grey" name="cat-type"> Gray-Grey
                     </label>
                 </div>
                 <div>
@@ -97,8 +98,9 @@
                         <input type="radio" id="raggedy-doll" value="raggedy-doll" value="raggedy-doll" name="cat-type"> Raggedy Doll
                     </label>
                 </div>
+                <br>
 
-                <p> What are your favorite features on a cat?</p>
+                <label> What are your favorite features on a cat?</label><br>
                 <div>
                     <label for="toughin-stance">
                         <input type="checkbox" id="toughin-stance" value="toughin-stance" name="cat-features" checked required> Toughin' Stance
@@ -120,8 +122,8 @@
                     </label>
                 </div>
                 <div>
-                    <label for="grumble-stare">
-                        <input type="checkbox" id="grumble-stare" value="grumble-stare" name="cat-features"> Grumble Stare
+                    <label for="grumble-gaze">
+                        <input type="checkbox" id="grumble-gaze" value="grumble-gaze" name="cat-features"> Grumble Gaze
                     </label>
                 </div>
                 <div>
@@ -137,6 +139,11 @@
                 <div>
                     <label for="neaps">
                         <input type="checkbox" id="neaps" value="neaps" name="cat-features"> Neaps
+                    </label>
+                </div>
+                <div>
+                    <label for="maple-stare">
+                        <input type="checkbox" id="maple-stare" value="maple-stare" name="cat-features"> Maple Stare
                     </label>
                 </div>
                 <div>
@@ -170,8 +177,8 @@
                     </label>
                 </div>
                 <div>
-                    <label for="mittens">
-                        <input type="checkbox" id="mittens" value="mittens" name="cat-features"> Mittens
+                    <label for="mittsies">
+                        <input type="checkbox" id="mittsies" value="mittsies" name="cat-features"> Mittsies
                     </label>
                 </div>
                 <div>

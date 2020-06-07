@@ -1,11 +1,8 @@
 body {
-    background-image: url(images/cat-snacks.jpg);
-    background-size: 400px 400px;
-    background-color: #A8E6DB;
-}
-
-#background-contrast{
-    filter: contrast(180%);
+    background-image: url(images/library-cats.jpg);
+    background-size: 410px 410px;
+    background-color: #F6DBC2;
+    font-family: Manrope;
 }
 
 main {
@@ -14,4 +11,19 @@ main {
     padding-top: 15px;
     padding-left: 30px;
     background-color: #FFFFFF;
+}
+
+.form-container {
+    border-width: 20px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+input.text {
+    width: 70%;
+}
+
+.submit-button{
+
 }
