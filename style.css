@@ -20,8 +20,29 @@ main {
     border-radius: 10px;
 }
 
-input.text {
-    width: 70%;
+input[type]:not([type=radio]):not([type=checkbox]) {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+
+}
+
+/* Remove arrows from number field- Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-innerspin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove arrows from number field- Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .submit-button{
