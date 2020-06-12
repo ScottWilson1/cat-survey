@@ -6,20 +6,30 @@ body {
 }
 
 main {
+}
+
+.form-container {
     margin-left: 25%;
     margin-right:25%;
     margin-top: 30px;
     padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
     background-color: #FFFFFF;
-}
-
-.form-container {
-    border-width: 20px;
     border-color: white;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 15px;
+}
+
+label {
+    font-size: 24px;
+}
+
+.list-label {
+    display: block;
+    margin-bottom: -10px;
 }
 
 input[type]:not([type=radio]):not([type=checkbox]) {
@@ -29,10 +39,6 @@ input[type]:not([type=radio]):not([type=checkbox]) {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-
-input[type=text] {
-
 }
 
 /* Remove arrows from number field- Chrome, Safari, Edge, Opera */
