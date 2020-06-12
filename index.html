@@ -2,25 +2,26 @@
 <html lang=en-US>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet" type="text/css">
         <title>Cat Form</title>
     </head>
 
-    <body>
+    <body id="background-contrast">
         <main>
-            <h1 id="title">Cat Form</h1>
-            <p id="description">This is a form about cats!</p>
-            <form id="survey-form">
-                <p id="name-label">Name</p>
-                <input type="text" id="name" placeholder="Enter your name" required>
+            <div class="form-container">
+                <h1 id="title">Very Important Cat Survey</h1>
+                <p id="description">This is a survey about cats!</p>
+                <form id="survey-form">
+                    <label for="name" id="name-label">Name</label><br>
+                    <input type="text" id="name" placeholder="Enter your name" required><br><br>
 
-                <p id="email-label">Email</p>
-                <input type="email" id="email" placeholder="Enter your email" required>
+                    <label for="email" id="email-label">Email</label><br>
+                    <input type="email" id="email" placeholder="Enter your email" required><br><br>
 
-                <p id="number-label">How many kitters have you choosen to share your life with? (Optional)</p>
-                <input type="number" id="number" placeholder="Enter the number of cats you have" min="1" max="12">
-                <br><br>
-                
-                
+                    <label for="number" id="number-label">How many kitters have you choosen to share your life with?</label><br>
+                    <input type="number" id="number" placeholder="Enter the number of cats you have" min="1" max="12">
+                    <br><br>
+                    
                     <label  for="dropdown-label">Cats are </label>
                     <select id="dropdown" name="cat-description" required>
                         <option></option>
@@ -29,171 +30,148 @@
                         <option value="bae">bae</option>
                     </select>
                     <span></span>.</span>
-                
+                    <br><br>
+                    
 
-                <p>Which type of kitty is best?</p>
-                <div>
-                    <label for="tuxie">
-                        <input type="radio" id="tuxie" value="tuxie" name="cat-type" checked required> Tuxie
-                    </label>
-                </div>
-                <div>
-                    <label for="gingie">
-                        <input type="radio" id="gingie" value="gingie" name="cat-type"> Gingie
-                    </label>
-                </div>
-                <div>
-                    <label for="tabbers">
-                        <input type="radio" id="tabbers" value="tabbers" name="cat-type"> Tabbers
-                    </label>
-                </div>
-                <div>
-                    <label for="calie">
-                        <input type="radio" id="calie" value="calie" name="cat-type"> Calie
-                    </label>
-                </div>
-                <div>
-                    <label for="tortie">
-                        <input type="radio" id="tortie" value="tortie" name="cat-type"> Tortie
-                    </label>
-                </div>
-                <div>
-                    <label for="creamsicle">
-                        <input type="radio" id="creamsicle" value="creamsicle" name="cat-type"> Creamsicle
-                    </label>
-                </div>
-                <div>
-                    <label for="night">
-                        <input type="radio" id="night" value="night" name="cat-type"> Night
-                    </label>
-                </div>
-                <div>
-                    <label for="maine-floof">
-                        <input type="radio" id="maine-floof" value="maine-floof" name="cat-type"> Maine Floof
-                    </label>
-                </div>
-                <div>
-                    <label for="foldy-boi">
-                        <input type="radio" id="foldy-boi" value="foldy-boi" name="cat-type"> Foldy Boi
-                    </label>
-                </div>
-                <div>
-                    <label for="siameses">
-                        <input type="radio" id="siameses" value="siameses" name="cat-type"> Siameses
-                    </label>
-                </div>
-                <div>
-                    <label for="gray-grey">
-                        <input type="radio" id="gray-grey" value="gray-grey" name="cat-type"> Gray Grey
-                    </label>
-                </div>
-                <div>
-                    <label for="goblin">
-                        <input type="radio" id="goblin" value="goblin" name="cat-type"> Goblin
-                    </label>
-                </div>
-                <div>
-                    <label for="raggedy-doll">
-                        <input type="radio" id="raggedy-doll" value="raggedy-doll" value="raggedy-doll" name="cat-type"> Raggedy Doll
-                    </label>
-                </div>
+                    <label class="list-label">Which type of kitty is best?</label><br>
+                        <label for="tuxie" class="radio-container">  Tuxie
+                            <input type="radio" id="tuxie" value="tuxie" name="cat-type" checked required>
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="gingie" class="radio-container">  Gingie
+                            <input type="radio" id="gingie" value="gingie" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="tabbers" class="radio-container">  Tabbers
+                            <input type="radio" id="tabbers" value="tabbers" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="calie" class="radio-container"> Calie
+                            <input type="radio" id="calie" value="calie" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="tortie" class="radio-container"> Tortie
+                            <input type="radio" id="tortie" value="tortie" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="creamsicle" class="radio-container"> Creamsicle
+                            <input type="radio" id="creamsicle" value="creamsicle" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="night" class="radio-container"> Night
+                            <input type="radio" id="night" value="night" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="maine-floof" class="radio-container"> Maine Floof
+                            <input type="radio" id="maine-floof" value="maine-floof" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="foldy-boi" class="radio-container"> Foldy Boi
+                            <input type="radio" id="foldy-boi" value="foldy-boi" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="siameses" class="radio-container"> Siameses
+                            <input type="radio" id="siameses" value="siameses" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="gray-grey" class="radio-container"> Gray-Grey
+                            <input type="radio" id="gray-grey" value="gray-grey" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="goblin" class="radio-container"> Goblin
+                            <input type="radio" id="goblin" value="goblin" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                        <label for="raggedy-doll" class="radio-container"> Raggedy Doll
+                            <input type="radio" id="raggedy-doll" value="raggedy-doll" value="raggedy-doll" name="cat-type">
+                            <span class="radio-checkmark"></span>
+                        </label>
+                    <br>
 
-                <p> What are your favorite features on a cat?</p>
-                <div>
-                    <label for="toughin-stance">
-                        <input type="checkbox" id="toughin-stance" value="toughin-stance" name="cat-features" checked required> Toughin' Stance
-                    </label>
-                </div>
-                <div>
-                    <label for="ear-tufts">
-                        <input type="checkbox" id="ear-tufts" value="ear-tufts" name="cat-features"> Ear Tufts
-                    </label>
-                </div>
-                <div>
-                    <label for="boop-button">
-                        <input type="checkbox" id="boop-button" value="boop-button" name="cat-features"> Boop Button
-                    </label>
-                </div>
-                <div>
-                    <label for="whisker-stache">
-                        <input type="checkbox" id="whisker-stache" value="whisker-stache" name="cat-features"> Whisker Stache
-                    </label>
-                </div>
-                <div>
-                    <label for="grumble-stare">
-                        <input type="checkbox" id="grumble-stare" value="grumble-stare" name="cat-features"> Grumble Stare
-                    </label>
-                </div>
-                <div>
-                    <label for="fluffle-knees">
-                        <input type="checkbox" id="fluffle-knees" value="fluffle-knees" name="cat-features"> Fluffle Knees
-                    </label>
-                </div>
-                <div>
-                    <label for="blep-tongue">
-                        <input type="checkbox" id="blep-tongue" value="blep-tongue" name="cat-features"> Blep Tongue
-                    </label>
-                </div>
-                <div>
-                    <label for="neaps">
-                        <input type="checkbox" id="neaps" value="neaps" name="cat-features"> Neaps
-                    </label>
-                </div>
-                <div>
-                    <label for="snorgle-tum">
-                        <input type="checkbox" id="snorgle-tum" value="snorgle-tum" name="cat-features"> Snorgle Tum
-                    </label>
-                </div>
-                <div>
-                    <label for="jitter-tail">
-                        <input type="checkbox" id="jitter-tail" value="jitter-tail" name="cat-features"> Jitter Tail
-                    </label>
-                </div>
-                <div>
-                    <label for="babby-teef">
-                        <input type="checkbox" id="babby-teef" value="babby-teef" name="cat-features"> Babby Teef
-                    </label>
-                </div>
-                <div>
-                    <label for="toe-beards">
-                        <input type="checkbox" id="toe-beards" value="toe-beards" name="cat-features"> Toe Beards
-                    </label>
-                </div>
-                <div>
-                    <label for="buzz-cut">
-                        <input type="checkbox" id="buzz-cut" value="buzz-cut" name="cat-features"> Buzz Cut
-                    </label>
-                </div>
-                <div>
-                    <label for="optional-fourth-leg">
-                        <input type="checkbox" id="optional-fourth-leg" value="optional-fourth-leg" name="cat-features"> Optional Fourth Leg
-                    </label>
-                </div>
-                <div>
-                    <label for="mittens">
-                        <input type="checkbox" id="mittens" value="mittens" name="cat-features"> Mittens
-                    </label>
-                </div>
-                <div>
-                    <label for="tummy-puddles">
-                        <input type="checkbox" id="tummy-puddles" value="tummy-puddles" name="cat-features"> Tummy Puddles
-                    </label>
-                </div>
-                <div>
-                    <label for="bunny-feets">
-                        <input type="checkbox" id="bunny-feets" value="bunny-feets" name="cat-features"> Bunny Feets
-                    </label>
-                </div>
-                <br>
+                    <label class="list-label"> What are your favorite features on a cat?</label><br>
+                        <label for="toughin-stance" class="checkmark-container"> Toughin' Stance
+                            <input type="checkbox" id="toughin-stance" value="toughin-stance" name="cat-features" checked required>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="ear-tufts" class="checkmark-container"> Ear Tufts
+                            <input type="checkbox" id="ear-tufts" value="ear-tufts" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="boop-button" class="checkmark-container"> Boop Button
+                            <input type="checkbox" id="boop-button" value="boop-button" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="whisker-stache" class="checkmark-container"> Whisker Stache
+                            <input type="checkbox" id="whisker-stache" value="whisker-stache" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="grumble-gaze" class="checkmark-container">  Grumble grumble-gaze
+                            <input type="checkbox" id="grumble-gaze" value="grumble-gaze" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="fluffle-knees" class="checkmark-container">  Fluffle Knees
+                            <input type="checkbox" id="fluffle-knees" value="fluffle-knees" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="blep-tongue" class="checkmark-container">  Blep Tongue
+                            <input type="checkbox" id="blep-tongue" value="blep-tongue" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="neaps" class="checkmark-container"> Neaps
+                            <input type="checkbox" id="neaps" value="neaps" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="maple-stare" class="checkmark-container"> Maple Stare
+                            <input type="checkbox" id="maple-stare" value="maple-stare" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="snorgle-tum" class="checkmark-container"> Snorgle Tum
+                            <input type="checkbox" id="snorgle-tum" value="snorgle-tum" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="jitter-tail" class="checkmark-container"> Jitter Tail
+                            <input type="checkbox" id="jitter-tail" value="jitter-tail" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="babby-teef" class="checkmark-container"> Babby Teef
+                            <input type="checkbox" id="babby-teef" value="babby-teef" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="toe-beards" class="checkmark-container"> Toe Beards
+                            <input type="checkbox" id="toe-beards" value="toe-beards" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="buzz-cut" class="checkmark-container"> Buzz Cut
+                            <input type="checkbox" id="buzz-cut" value="buzz-cut" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="optional-fourth-leg" class="checkmark-container"> Optional Fourth Leg
+                            <input type="checkbox" id="optional-fourth-leg" value="optional-fourth-leg" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="mittsies" class="checkmark-container"> Mittsies
+                            <input type="checkbox" id="mittsies" value="mittsies" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="tummy-puddles" class="checkmark-container"> Tummy Puddles
+                            <input type="checkbox" id="tummy-puddles" value="tummy-puddles" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="bunny-feets" class="checkmark-container"> Bunny Feets
+                            <input type="checkbox" id="bunny-feets" value="bunny-feets" name="cat-features">
+                            <span class="checkmark"></span>
+                        </label>
+                    <br>
 
-                <div>
-                    <label for="cat-haiku">Please write a haiku about cats (Optional)</label>
-                </div>
-                <textarea id="cat-haiku" name="cat-haiku" rows="3" cols="70"></textarea>
-                <br>
+                    <div>
+                        <label for="cat-haiku">Please write a haiku about cats (Optional)</label>
+                    </div>
+                    <textarea id="cat-haiku" name="cat-haiku" rows="3" cols="70"></textarea>
+                    <br>
 
-                <button type="submit" id="submit">Submit</button>
-            </form>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
         </main>
     </body>
 </html>
