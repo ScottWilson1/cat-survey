@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="images/meow_clipboard.png">
         <title>Cat Form</title>
     </head>
 
@@ -12,13 +13,13 @@
                 <h1 id="title">Very Important Cat Survey</h1>
                 <p id="description">This is a survey about cats!</p>
                 <form id="survey-form">
-                    <label for="name" id="name-label">Name</label><br>
+                    <label for="name" id="name-label" class="label-bottom-margin">Name</label><br>
                     <input type="text" id="name" placeholder="Enter your name" required><br><br>
 
-                    <label for="email" id="email-label">Email</label><br>
+                    <label for="email" id="email-label" class="label-bottom-margin">Email</label><br>
                     <input type="email" id="email" placeholder="Enter your email" required><br><br>
 
-                    <label for="number" id="number-label">How many kitters have you choosen to share your life with?</label><br>
+                    <label for="number" id="number-label" class="label-bottom-margin">How many kitters have you choosen to share your life with?</label><br>
                     <input type="number" id="number" placeholder="Enter the number of cats you have" min="1" max="12">
                     <br><br>
                     
@@ -163,13 +164,10 @@
                         </label>
                     <br>
 
-                    <div>
-                        <label for="cat-haiku">Please write a haiku about cats (Optional)</label>
-                    </div>
-                    <textarea id="cat-haiku" name="cat-haiku" rows="3" cols="70"></textarea>
-                    <br>
+                    <label for="cat-haiku" class="text-area-label">Please write a haiku about cats (Optional)</label>
+                    <textarea id="cat-haiku" name="cat-haiku" rows="3" cols="70" class="text-area"></textarea>
 
-                    <button type="submit" id="submit">Submit</button>
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
                 </form>
             </div>
         </main>

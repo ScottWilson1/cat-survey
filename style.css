@@ -1,3 +1,8 @@
+:root {
+    --selected-green: #51c2b7;
+    --hover-orange: #feb176;
+}
+
 body {
     background-image: url(images/library-cats.jpg);
     background-size: 410px 410px;
@@ -5,18 +10,9 @@ body {
     font-family: Manrope;
 }
 
-main {
-}
-
 .form-container {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 25px;
+    margin: 30px 25%;
+    padding: 10px 30px 25px;
     background-color: #FFFFFF;
     border-radius: 15px;
 }
@@ -25,12 +21,12 @@ label {
     font-size: 24px;
 }
 
-.list-label {
+.label-bottom-margin {
     display: block;
-    margin-bottom: -10px;
+    margin-bottom: -22px;
 }
 
-input[type]:not([type=radio]):not([type=checkbox]) {
+input[type=text], input[type=email]{
     width: 100%;
     padding: 10px 15px;
     margin: 10px 0px;
@@ -50,6 +46,18 @@ input::-webkit-inner-spin-button {
 /* Remove arrows from number field- Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+    width: 50%;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.list-label{
+    display: block;
+    margin-bottom: -12px;
 }
 
 .radio-container {
@@ -79,12 +87,12 @@ input[type=number] {
 
 /* On mouse-over, add an orange background color */
 .radio-container:hover input ~ .radio-checkmark {
-    background-color: #feb176;
+    background-color: var(--hover-orange);
 }
 
 /* When the radio button is checked, change the background color */
 .radio-container input:checked ~ .radio-checkmark {
-    background-color: #51c2b7;
+    background-color: var(--selected-green);
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -135,12 +143,12 @@ input[type=number] {
 
 /* On mouse-over, add an orange background color */
 .checkmark-container:hover input ~ .checkmark {
-    background-color: #feb176;
+    background-color: var(--hover-orange);
 }
 
 /* When the checkbox is checked, change the background color */
 .checkmark-container input:checked ~ .checkmark {
-    background-color: #51c2b7;
+    background-color: var(--selected-green);
 }
 
 /* Create the checkmark (hidden when not checked) */
@@ -168,8 +176,23 @@ input[type=number] {
     transform: rotate(45deg);
 }
 
+.text-area-label {
+    display: block;
+    margin-bottom: 20px;
+}
 
 
-.submit-button{
+.text-area {
+    resize: none;
+    margin-bottom: 30px;
+}
 
+.submit-button {
+    background-color: var(--selected-green);
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 32px;
 }
