@@ -195,4 +195,5 @@ input[type=number] {
     font-weight: bold;
     text-align: center;
     padding: 12px 32px;
+    display: block;
 }
